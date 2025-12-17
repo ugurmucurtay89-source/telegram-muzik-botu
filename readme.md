@@ -1,12 +1,12 @@
-# 🎶 Telegram Müzik Botu
+# 🎶 Telegram Müzik Botu @Cumhurbbaskani
 
-Bu proje, **Node.js** ile geliştirilmiş, Telegram gruplarında müzik çalabilen, şarkı yönetimi yapabilen ve gelişmiş özelliklere sahip güçlü bir müzik botudur. Ayrıca, botun kullanım istatistiklerini gösteren basit bir web tabanlı **admin paneli** de içerir.
+**@Cumhurbbaskani** tarafından geliştirilen bu proje, **Node.js** ile yapılmış, Telegram gruplarında müzik çalabilen, şarkı yönetimi yapabilen ve gelişmiş özelliklere sahip güçlü bir müzik botudur. Ayrıca, botun kullanım istatistiklerini gösteren basit bir web tabanlı **admin paneli** de içerir.
 
 ---
 
-## ✨ Özellikler
+## ✨ Özellikler @Cumhurbbaskani
 
-### Müzik Kontrolleri
+### Müzik Kontrolleri @Cumhurbbaskani
 
 * `/play [şarkı adı/URL]`: **YouTube**, **Spotify** ve **SoundCloud** URL'lerini destekler. Şarkı adı verildiğinde YouTube'da arama yapar ve çalar veya sıraya ekler.
 * `/queue`: Mevcut şarkı kuyruğunu gösterir.
@@ -20,7 +20,7 @@ Bu proje, **Node.js** ile geliştirilmiş, Telegram gruplarında müzik çalabil
 * `/shuffle`: Kuyruğu karıştırır.
 * `/loop [on/off/queue]`: Şarkıyı (`on`) veya kuyruğu (`queue`) döngüye alır, kapatır (`off`).
 
-### Gelişmiş Özellikler
+### Gelişmiş Özellikler @Cumhurbbaskani
 
 * **Otomatik Öneri Modu**: Kuyruk boşaldığında, kullanıcının dinleme geçmişinden rastgele bir şarkı önerir ve çalar.
 * **Kişisel Çalma Listeleri**:
@@ -35,7 +35,7 @@ Bu proje, **Node.js** ile geliştirilmiş, Telegram gruplarında müzik çalabil
 * `/radio [stream URL]`: Canlı radyo yayını çalar (MTProto üzerinden).
 * `/filter [efekt]`: Ses efektleri uygulamayı amaçlar (geliştirme aşamasında).
 
-### Yönetim ve Kullanıcı Deneyimi
+### Yönetim ve Kullanıcı Deneyimi @Cumhurbbaskani
 
 * **Butonlarla Kontrol**: Çalan şarkı mesajının altında interaktif kontrol butonları bulunur.
 * **Şarkı Değişince Mesaj Güncelleme**: Çalan şarkı bilgisi otomatik olarak güncellenir.
@@ -50,7 +50,7 @@ Bu proje, **Node.js** ile geliştirilmiş, Telegram gruplarında müzik çalabil
 
 ---
 
-## 🚀 Kurulum
+## 🚀 Kurulum @Cumhurbbaskani
 
 ### Ön Gereksinimler
 
@@ -64,17 +64,17 @@ Kuruluma başlamadan önce bu gereksinimlerin bilgisayarınızda yüklü olduğu
 
 ### Projeyi Hazırlama
 
-1.  **Bot Dosyalarını İndir**: Proje dosyalarını bilgisayarınıza indirin ve botun ana klasörüne yerleştirin.
-2.  **Klasör Yapısını Doğrula**: Ana bot klasörünüzde şu klasörlerin olduğundan emin olun: `data/` (boş olabilir), `admin-panel/views/`.
-3.  **`package.json` Oluştur**: Projenizin ana dizininde bir terminal açın ve aşağıdaki komutu çalıştırın:
+1. **Bot Dosyalarını İndir**: Proje dosyalarını bilgisayarınıza indirin ve botun ana klasörüne yerleştirin.
+2. **Klasör Yapısını Doğrula**: Ana bot klasörünüzde şu klasörlerin olduğundan emin olun: `data/` (boş olabilir), `admin-panel/views/`.
+3. **`package.json` Oluştur**: Projenizin ana dizininde bir terminal açın ve aşağıdaki komutu çalıştırın:
 
-    ```bash
+    ```
     npm init -y
     ```
 
-4.  **Bağımlılıkları Yükle**: Aynı terminalde şu komutu çalıştırın:
+4. **Bağımlılıkları Yükle**: Aynı terminalde şu komutu çalıştırın:
 
-    ```bash
+    ```
     npm install node-telegram-bot-api ytdl-core fluent-ffmpeg ytsr spotify-url-info soundcloud-scraper telegram express ejs
     ```
 
@@ -84,51 +84,51 @@ Kuruluma başlamadan önce bu gereksinimlerin bilgisayarınızda yüklü olduğu
 
 `index.js` dosyasını bir metin düzenleyiciyle açın ve aşağıdaki satırları kendi bilgilerinizle güncelleyin:
 
-* `const BOT_TOKEN = 'YOUR_TELEGRAM_BOT_TOKEN_HERE';`: BotFather'dan aldığınız bot token'ını buraya yapıştırın.
-* `const API_ID = YOUR_TELEGRAM_API_ID_HERE;`: [my.telegram.org/apps](https://my.telegram.org/apps) adresinden aldığınız API ID'yi buraya yapıştırın (sayı).
-* `const API_HASH = 'YOUR_TELEGRAM_API_HASH_HERE';`: [my.telegram.org/apps](https://my.telegram.org/apps) adresinden aldığınız API Hash'i buraya yapıştırın (uzun metin).
-* `const ADMIN_IDS = [YOUR_TELEGRAM_USER_ID_HERE];`: Kendi Telegram kullanıcı ID'nizi buraya yapıştırın (sayı). Birden fazla admin için virgülle ayırarak ekleyebilirsiniz: `[123456789, 987654321]`.
+* `const BOT_TOKEN = '8131140912:AAEih1CQY0Yfgm3mrL2Zvoi3lf39cctyKT8';`: BotFather'dan aldığınız bot token'ını buraya yapıştırın.
+* `const API_ID = 33818253;`: [my.telegram.org/apps](https://my.telegram.org/apps) adresinden aldığınız API ID'yi buraya yapıştırın (sayı).
+* `const API_HASH = '22a4a51c2bd3799fdde7226fc112e6d6';`: [my.telegram.org/apps](https://my.telegram.org/apps) adresinden aldığınız API Hash'i buraya yapıştırın (uzun metin).
+* `const ADMIN_IDS = [916150666];`: Kendi Telegram kullanıcı ID'nizi buraya yapıştırın (sayı). Birden fazla admin için virgülle ayırarak ekleyebilirsiniz: `[123456789, 987654321]`.
 
 #### 2. Botu İlk Kez Çalıştırma ve MTProto Oturumunu Kaydetme
 
 Botu ilk kez başlattığınızda, Telegram hesabınızla bir oturum kurması gerekecek.
 
-1.  Projenizin ana dizininde yeni bir terminal açın.
-2.  Şu komutu çalıştırın:
+1. Projenizin ana dizininde yeni bir terminal açın.
+2. Şu komutu çalıştırın:
 
-    ```bash
+    ```
     node index.js
     ```
 
-3.  Terminalde bot sizden sırasıyla botun bağlı olduğu Telegram hesabının **telefon numarasını**, varsa **iki adımlı doğrulama şifresini** ve Telegram uygulamanıza gelen **doğrulama kodunu** isteyecektir. Bu bilgileri doğru bir şekilde girin.
-4.  Başarılı bir şekilde bağlandıktan sonra, terminalde `Oturum dizeniz (bunu StringSession'a kaydedin):` mesajını ve altında çok uzun bir metin (session string'iniz) göreceksiniz.
-5.  Bu uzun metni tamamen kopyalayın.
-6.  `index.js` dosyasında `const stringSession = new StringSession('');` yazan yeri bulun ve kopyaladığınız string'i tırnakların içine yapıştırın:
+3. Terminalde bot sizden sırasıyla botun bağlı olduğu Telegram hesabının **telefon numarasını**, varsa **iki adımlı doğrulama şifresini** ve Telegram uygulamanıza gelen **doğrulama kodunu** isteyecektir. Bu bilgileri doğru bir şekilde girin.
+4. Başarılı bir şekilde bağlandıktan sonra, terminalde `Oturum dizeniz (bunu StringSession'a kaydedin):` mesajını ve altında çok uzun bir metin (session string'iniz) göreceksiniz.
+5. Bu uzun metni tamamen kopyalayın.
+6. `index.js` dosyasındaki `const stringSession = new StringSession('');` yazan yeri bulun ve kopyaladığınız string'i tırnakların içine yapıştırın:
 
-    ```javascript
+    ```
     const stringSession = new StringSession('BURAYA_KOPYALADIĞINIZ_ÇOK_UZUN_METİN_GELECEK');
     ```
 
-7.  `index.js` dosyasını kaydedin. Bu işlem, botu her yeniden başlattığınızda tekrar telefon numarası sormasını engelleyecektir.
+7. `index.js` dosyasını kaydedin. Bu işlem, botu her yeniden başlattığınızda tekrar telefon numarası sormasını engelleyecektir.
 
 ---
 
-## ⚙️ Kullanım Talimatları
+## ⚙️ Kullanım Talimatları @Cumhurbbaskani
 
 ### Botu Başlatma
 
-* Bot Terminali: İlk çalıştırmayı yaptığınız terminali kapatmadıysanız (veya kapattıysanız `Ctrl+C` ile durdurup), aşağıdaki komutla botu tekrar başlatın:
+* **Bot Terminali**: İlk çalıştırmayı yaptığınız terminali kapatmadıysanız (veya kapattıysanız `Ctrl+C` ile durdurup), aşağıdaki komutla botu tekrar başlatın:
 
-    ```bash
+    ```
     node index.js
     ```
 
 ### Admin Panelini Başlatma
 
-* Admin Paneli Terminali: Botun çalıştığı terminali açık bırakarak, projenizin ana dizininde yeni bir terminal açın.
+* **Admin Paneli Terminali**: Botun çalıştığı terminali açık bırakarak, projenizin ana dizininde yeni bir terminal açın.
 * Şu komutu çalıştırın:
 
-    ```bash
+    ```
     node adminServer.js
     ```
 
@@ -136,17 +136,17 @@ Botu ilk kez başlattığınızda, Telegram hesabınızla bir oturum kurması ge
 
 ### Telegram'da Botu Kullanma
 
-1.  Botunuzu bir Telegram grubuna ekleyin.
-2.  Bota **yönetici yetkilerini** verin; özellikle "Sesli Sohbetleri Yönet" yetkisinin verildiğinden emin olun.
-3.  Grupta bir sesli sohbet başlatın.
-4.  Botu kullanmaya başlayın:
+1. Botunuzu bir Telegram grubuna ekleyin.
+2. Bota **yönetici yetkilerini** verin; özellikle "Sesli Sohbetleri Yönet" yetkisinin verildiğinden emin olun.
+3. Grupta bir sesli sohbet başlatın.
+4. Botu kullanmaya başlayın:
     * `/joinvc`: Botu sesli sohbete katılmaya davet edin.
     * `/play [şarkı adı veya YouTube/Spotify/SoundCloud linki]`: Müzik çalmaya başlayın.
     * Diğer komutlar için `/help` yazabilirsiniz.
 
 ---
 
-## ⚠️ Önemli Detaylar ve Dikkat Edilmesi Gerekenler
+## ⚠️ Önemli Detaylar ve Dikkat Edilmesi Gerekenler @Cumhurbbaskani
 
 * **MTProto Sesli Sohbet Akışı (Kritik!)**: Bu projedeki MTProto sesli sohbet entegrasyonu (müzik çalma ve radyo yayını), Telegram'ın düşük seviyeli MTProto API'sini kullanır. `index.js` dosyasındaki `playSong` ve `radio` fonksiyonları içinde, FFmpeg'den gelen ses verilerini Telegram'a gerçek zamanlı olarak UDP üzerinden gönderme mekanizması sadece **simüle edilmiştir**. Bu kısmı tam olarak çalışan hale getirmek, derinlemesine araştırma, düşük seviyeli ağ programlama bilgisi ve Telegram'ın Voice Chat protokol detayları hakkında kapsamlı bir anlayış gerektirir. **Bu kısmı tamamlamadan bot, sesli sohbete katılsa bile müzik çalmayacaktır.** Konsolda `[MTProto Simülasyon] Ses stream'i başlatıldı. Gerçek Opus paketleri burada gönderilecek.` gibi mesajlar göreceksiniz.
 * **FFmpeg Kurulumu**: FFmpeg'in doğru bir şekilde kurulduğundan ve sistem PATH'ine eklendiğinden emin olun. Bu olmadan botun ses işleme ve indirme özellikleri çalışmayacaktır.
@@ -156,9 +156,7 @@ Botu ilk kez başlattığınızda, Telegram hesabınızla bir oturum kurması ge
 
 ---
 
-## 📁 Proje Dosya Yapısı
-
-```
+## 📁 Proje Dosya Yapısı @Cumhurbbaskani
 telegram-muzik-botu/
 ├── data/
 │   ├── logs.json
@@ -170,7 +168,7 @@ telegram-muzik-botu/
 ├── index.js
 ├── adminServer.js
 └── package.json
-```
+
 
 ### Açıklamalar
 
@@ -188,17 +186,17 @@ telegram-muzik-botu/
 
 ---
 
-## ⚖️ Lisans ve Katkı
+## ⚖️ Lisans ve Katkı @Cumhurbbaskani
 
-Bu proje, **Alp** tarafından ücretsiz ve açık kaynak olarak halka sunulmuştur. Kullanımı ve üzerinde geliştirme yapılması tamamen serbesttir. Emeğe saygı göstermek ve projenin gelişimine katkıda bulunmak için lütfen projeyi beğenmeyi ve yıldızlamayı unutmayın.
+**@Cumhurbbaskani** tarafından ücretsiz ve açık kaynak olarak halka sunulmuştur. Kullanımı ve üzerinde geliştirme yapılması tamamen serbesttir. Emeğe saygı göstermek ve projenin gelişimine katkıda bulunmak için lütfen projeyi beğenmeyi ve yıldızlamayı unutmayın.
 
 **Önemli Not:** Projenin aslının (kaynak kodunun) izinsiz çoğaltılması ve dağıtılması yasaktır. Lütfen bu kurala uyun.
 
 ---
 
-## ⚠️ Önemli Bilgilendirme
+## ⚠️ Önemli Bilgilendirme @Cumhurbbaskani
 
-Bu proje, **deneysel amaçlarla geliştirilmiştir** ve ticari bir ürün olarak tasarlanmamıştır. Halka **ücretsiz olarak sunulmuştur** ve henüz geliştirme aşamasındadır. Bu nedenle, projenin **%100 sorunsuz çalışmadığını** belirtmek isteriz. Karşılaşabileceğiniz hatalar ve eksiklikler, projenin deneysel niteliğinden kaynaklanmaktadır. Anlayışınız için teşekkür ederiz.
+Bu proje, **@Cumhurbbaskani** tarafından **deneysel amaçlarla geliştirilmiştir** ve ticari bir ürün olarak tasarlanmamıştır. Halka **ücretsiz olarak sunulmuştur** ve henüz geliştirme aşamasındadır. Bu nedenle, projenin **%100 sorunsuz çalışmadığını** belirtmek isteriz. Karşılaşabileceğiniz hatalar ve eksiklikler, projenin deneysel niteliğinden kaynaklanmaktadır. Anlayışınız için teşekkür ederiz.
 
 ---
 
@@ -208,4 +206,4 @@ Botun sesli sohbet özellikleri (müzik çalma ve radyo yayını), Telegram'ın 
 
 ---
 
-# Developed by Alp • 2025 '
+# Developed by **@Cumhurbbaskani** • 2025
